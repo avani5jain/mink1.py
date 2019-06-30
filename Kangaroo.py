@@ -5,11 +5,11 @@ import re
 import sys
 
 # Complete the kangaroo function below.
-def kangaroo(x1, v1, x2, v2,n):
+def kangaroo(x1, v1, x2, v2):
     c=x1
     d=x2
     
-    for i in range(0,n):
+    for i in range(10000):
         c=c+v1
         d=d+v2
     if(c==d):
@@ -29,9 +29,9 @@ if __name__ == '__main__':
     x2 = int(x1V1X2V2[2])
 
     v2 = int(x1V1X2V2[3])
-    n=int(input())
+    
 
-    result = kangaroo(x1, v1, x2, v2,n)
+    result = kangaroo(x1, v1, x2, v2)
 
     fptr.write(result + '\n')
 
